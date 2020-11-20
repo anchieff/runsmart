@@ -1,0 +1,76 @@
+.advantages {
+  padding: 70px 0 78px;
+  text-align: center;
+  &__wrapper {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 247px;
+    img {
+      width: 70px;
+
+    }
+  }
+
+  &__subtitle {
+    margin-top: 38px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text;
+  }
+
+  &__content {
+    margin-top: 26px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    a {
+      color: $main-color;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .advantages {
+    padding-bottom: 40px;
+    &__wrapper {
+      margin-top: 40px;
+      flex-wrap: wrap;
+      
+    }
+    &__item {
+      width: 45%;
+      margin-bottom: 30px;
+      img {
+        width: 50px;
+      
+      }
+    }
+    &__subtitle {
+      margin-top: 20px;
+    }
+    &__content {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .advantages {
+    &__wrapper {
+      justify-content: center;
+    }
+    &__item {
+      width: 250px;
+    }
+  }
+
+}
+
+
