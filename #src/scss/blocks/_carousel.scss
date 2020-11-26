@@ -31,3 +31,61 @@
   }
 
 }
+
+@media (max-width: 1115px) {
+  .carousel {
+    .slide_prev {
+      left: 15px;
+    }
+    .slide_right {
+      right: 15px;
+    }
+    .tns-item {
+      img {
+        width: 650px;
+      }
+    }
+  }
+}
+
+@media (max-width: 745px) {
+  .carousel {
+    .slide_prev, .slide_right {
+      img {
+        width: 25px;
+        height: auto;
+      }
+    }
+    .tns-item {
+      img {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel {
+    .slide_prev, .slide_right {
+      img {
+        width: 15px;
+        height: auto;
+      }
+    }
+    .tns-item {
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .carousel {
+    .tns-item {
+      img {
+        width: 250px;
+      }
+    }
+  }
+}

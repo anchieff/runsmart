@@ -1,0 +1,65 @@
+.review {
+  padding-bottom: 40px;
+  &__item {
+    display: flex;
+    margin: 70px 0 30px;
+  }
+
+  &__img {
+    margin-right: 60px;
+    width: 169px;
+    height: 169px;
+  }
+
+  &__content {
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: $text;
+    margin-bottom: 10px;
+  }
+
+  &__marafon {
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+    color:$text;
+    max-width: 655px;
+  }
+}
+
+@media (max-width: 800px) {
+  .review {
+    img {
+      margin-right: 40px;
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .review {
+    &__item {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    img {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+

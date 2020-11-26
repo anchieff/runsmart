@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function(){
+  // Слайдер ==========================================================
   const slider = tns({
     container: '.carousel__slider',
     items: 1,

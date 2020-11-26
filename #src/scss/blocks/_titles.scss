@@ -7,9 +7,10 @@
   &_consultation {
     color: #fff;
   }
-  &_catalog {
+  &_catalog, &_review {
     text-align: center;
   }
+
 }
 
 @media (max-width: 640px) {
