@@ -351,6 +351,17 @@ h6 {
   margin-top: 80px;
 }
 
+.consultation .error {
+  border: 1px solid #c70101;
+}
+
+.consultation label.error {
+  color: #fff;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .feed-form {
   margin-top: 36px;
   display: -webkit-box;
@@ -757,6 +768,7 @@ h6 {
 }
 
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -784,6 +796,7 @@ h6 {
   font-size: 41px;
   line-height: 16px;
   color: #c70101;
+  cursor: pointer;
 }
 
 .modal__subtitle {
@@ -800,6 +813,34 @@ h6 {
   color: #0d0d0d;
   margin-bottom: 25px;
   text-align: center;
+}
+
+.modal_mini {
+  min-height: 140px;
+}
+
+.modal .error {
+  border: 1px solid #c70101;
+}
+
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#consultation,
+#order,
+#thanks {
+  display: none;
+}
+
+@media (max-width: 1139px) {
+  .footer__info {
+    padding: 30px;
+    width: 385px;
+    height: 235px;
+  }
 }
 
 @media (max-width: 1115px) {
@@ -819,6 +860,30 @@ h6 {
 @media (max-width: 850px) {
   .header__logo {
     width: 200px;
+  }
+}
+
+@media (max-width: 845px) {
+  .footer__info {
+    padding: 30px;
+    height: 195px;
+  }
+
+  .footer__adr {
+    margin-bottom: 25px;
+  }
+
+  .footer__tel {
+    margin-bottom: 25px;
+  }
+
+  .footer__social-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__social-item img {
+    height: 20px;
   }
 }
 
@@ -1005,6 +1070,20 @@ h6 {
   .catalog__content {
     margin-top: 30px;
   }
+
+  .modal {
+    width: 320px;
+    padding: 30px 10px;
+  }
+
+  .modal__subtitle {
+    font-size: 18px;
+  }
+
+  .modal__close {
+    top: -40px;
+    right: 0;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1071,6 +1150,33 @@ h6 {
     width: 100%;
     height: 50px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 385px) {
+  .footer__info {
+    width: 100%;
+    padding: 30px;
+    height: auto;
+  }
+
+  .footer__adr {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer__tel {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .footer__social-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__social-item img {
+    height: 20px;
   }
 }
 

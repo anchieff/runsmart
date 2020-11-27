@@ -35,8 +35,47 @@ window.addEventListener('DOMContentLoaded', function(){
   toggle('.catalog-item__link');
   toggle('.catalog-item__back');
 
+  // Modal =======================================================================
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn();
+  });
 
+  $('.modal__close').on('click', function() {
+    $('.overlay, .modal').fadeOut();
+  });
 
+  $('.button_catalog').each(function(i) {
+    $(this).on('click', function() {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn();
+    });
+  });
+
+  // Validation ====================================================================
+  function formValide(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }     
+      },
+      messages: {
+        name: "Пожалуйста, введите ваше имя",
+        phone: "Пожалуйста, введите ваш телефон",
+        email: {
+          required: "Пожалуйста, введите вашу почту",
+          email: "Ваша почта должна быть в формате name@domain.com"
+        }
+      }
+    });
+  }
+
+  formValide('#consultation-form');
+  formValide('#consultation form');
+  formValide('#order form');
 
 });
 

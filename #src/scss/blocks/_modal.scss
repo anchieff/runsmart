@@ -1,4 +1,5 @@
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,6 +23,7 @@
     font-size: 41px;
     line-height: 16px;
     color: $main-color;
+    cursor: pointer;
   }
 
   &__subtitle {
@@ -38,5 +40,36 @@
     color: #0d0d0d;
     margin-bottom: 25px;
     text-align: center;
+  }
+
+  &_mini {
+    min-height: 140px;
+  }
+  .error {
+    border: 1px solid $main-color;
+  }
+  label.error {
+    border: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+#consultation, #order, #thanks {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .modal {
+    width: 320px;
+    padding: 30px 10px;
+
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__close {
+      top: -40px;
+      right: 0;
+    }
   }
 }
