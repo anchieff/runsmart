@@ -102,6 +102,40 @@ h6 {
   font-style: normal;
 }
 
+@-webkit-keyframes heartbeat {
+  fron {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  fron {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   font-family: MuseoSans, sans-serif;
 }
@@ -297,6 +331,17 @@ h6 {
 
 .advantages__item img {
   width: 70px;
+}
+
+.advantages__icon_animated {
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .advantages__subtitle {

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>RunSmart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -63,8 +64,8 @@
           <div class="advantages__subtitle">Делимся опытом</div>
           <div class="advantages__content">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
         </div>
-        <div class="advantages__item">
-          <img src="img/icons/advantages_icon2.png" alt="heart">
+        <div class="advantages__item advantages__item_animated">
+          <img class= 'advantages__icon advantages__icon_animated' src="img/icons/advantages_icon2.png" alt="heart">
           <div class="advantages__subtitle">Заботимся о здоровье</div>
           <div class="advantages__content">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
           </div>
@@ -97,7 +98,7 @@
     </div>
   </section>
 
-  <section class="carousel">
+  <div class="carousel">
     <div class="container">
       <div class="carousel__slider">
         <div><img src="img/puls1.png" alt=""></div>
@@ -107,7 +108,7 @@
       <button class="slide_prev"><img src="img/icons/arrow_left.png" alt=""></button>
       <button class="slide_right"><img src="img/icons/arrow_right.png" alt=""></button>
     </div>   
-  </section>
+  </div>
 
   <section class="catalog">
     <div class="container">
@@ -380,8 +381,8 @@
 
   <section class="review">
     <div class="container">
-      <div class="title title_review">отзывы клиентов</div>
-      <div class="review__item">
+      <h2 class="title title_review">отзывы клиентов</h2>
+      <div class="review__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/review1.png" alt="" class="review__img">
         <div class="review__content">
           <div class="review__name">Ирина Иванченко</div>
@@ -394,7 +395,7 @@
             Спасибо, RunSmart!</div>
         </div>
       </div>
-      <div class="review__item">
+      <div class="review__item animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/review2.png" alt="" class="review__img">
         <div class="review__content">
           <div class="review__name">Иван Сёмочкин</div>
@@ -404,7 +405,7 @@
           С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
         </div>
       </div>
-      <div class="review__item">
+      <div class="review__item animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
         <img src="img/review3.png" alt="" class="review__img">
         <div class="review__content">
           <div class="review__name">Юлия Дашкина</div>
@@ -470,8 +471,8 @@
     <img src="img/icons/up.svg" alt="up">
   </a>
   
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
   <script src="js/script.min.js"></script>
